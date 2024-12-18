@@ -3,23 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>Videojuegos Geek</title>
     <style>
+        /* Estilos Generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: white;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Impact', sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f39c12;
+        }
+
+        /* Header */
+        header {
+            background: #1c1c1c;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: #f39c12;
+            font-size: 3rem;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 20px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.example.com/game-hero.jpg') no-repeat center center/cover;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* About Section */
+        .about {
+            background: #2c3e50;
+            padding: 40px 0;
+        }
+
+        .about p {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Games Section */
+        .games {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            background: #34495e;
+        }
+
+        .game {
+            background: #1abc9c;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            color: white;
+        }
+
+        .game img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game h3 {
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1c1c1c;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
+    <!-- Header -->
+    <header>
+        <h1>Videojuegos Geek</h1>
+        <nav>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#games">Juegos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>¡Sumérgete en el Mundo de los Videojuegos!</h2>
+            <p>Únete a la aventura, explora nuevos mundos y conquista tus juegos favoritos.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una comunidad de entusiastas de los videojuegos. Desde los clásicos hasta los nuevos lanzamientos, compartimos nuestra pasión por los juegos, creando un espacio donde puedes conocer las últimas novedades, trucos, y más. ¡Bienvenido al universo geek!</p>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="game">
+            <img src="https://www.example.com/game1.jpg" alt="Juego 1">
+            <h3>Juego 1</h3>
+            <p>Explora un mundo post-apocalíptico lleno de misterios y enemigos.</p>
+        </div>
+        <div class="game">
+            <img src="https://www.example.com/game2.jpg" alt="Juego 2">
+            <h3>Juego 2</h3>
+            <p>Corre, salta y lucha en una carrera contra el tiempo para salvar el universo.</p>
+        </div>
+        <div class="game">
+            <img src="https://www.example.com/game3.jpg" alt="Juego 3">
+            <h3>Juego 3</h3>
+            <p>Adéntrate en una aventura épica con amigos y derrota monstruos mitológicos.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <footer>
+            <p>© 2024 Videojuegos Geek. Todos los derechos reservados.</p>
+        </footer>
+    </section>
 </body>
 </html>
